@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSULTAR CLIENTES POR NOME.</title>
+</head>
+<body>
+<h2> procure um usuário pelo nome.</h2>
+<form action="/procurar" method="POST">
+    
+    <label for="pesquisa">procure pelo nome: </label>
+        <input type="text" id="pesquisa" name="pesquisa" required>
+    <button type="submit"> consultar cliente</button>
+
+<table border="1">
+    <tr>
+        <th> NOME CLIENTE </th>
+        <th> CPF CLIENTE</th>
+        <th> DESCRIÇÃO CLIENTE</th>        
+    </tr>
+{% for encontrado in registros %}
+    <tr>
+        <td> {{ encontrado[0] }} </td>
+        <td> {{ encontrado[1] }} </td>
+        <td> {{ encontrado[2] }} </td>        
+    </tr>
+{% endfor %}
+</table>
+    <br>
+    <a href="/">clique para voltar a área de cadastro</a>
+    <br>
+    <a href="/clientes">clique para ver todos os clientes</a>
+    <br>
+    <a href="/excluir_cadastro">clique para excluir um cliente</a>    
+</form>
+</body>
+</html>    

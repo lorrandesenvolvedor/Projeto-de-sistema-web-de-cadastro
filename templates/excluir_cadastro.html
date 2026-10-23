@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUIDADO ÁREA DE EXCLUSÃO DE CADASTROS!</title>
+</head>
+<body>
+
+<h1> CUIDADO, QUANDO VOCÊ EXCLUI UM CADASTRO, ESSA EXCLUSÃO NÃO PODERÁ SER DESFEITA.</h1>
+<form action="/excluir_cadastro" method="POST">
+    <label for="excluir_cadastro">digite o nome de quem deseja excluir do banco de dados</label>
+        <input type="text" id="excluir_cadastro" name="excluir_cadastro" required>
+    <button type="submit"> clique aqui para confirmar a exclusão</button>
+    
+    <br>
+    <a href="/">clique para voltar a área de cadastro</a>
+    <br>
+    <a href="/clientes">clique para ver todos os clientes</a>
+    <br>
+    <a href="/procurar">clique aqui para consultar clientes por nome</a>        
+</form>
+</body>
+</html>
+

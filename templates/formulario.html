@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO DE CLIENTES.</title>
+</head>
+<body>
+
+<h1> cadastramento de clientes.</h1>
+<form action="/cadastrar" method="POST">
+    
+    <label for="nome">nome completo: </label>
+        <input type="text" id="nome" name="nome" required>
+    
+    <label for="cpf">cpf do cliente por favor: </label>
+        <input type="text" id="cpf" name="cpf" required>
+    
+    <label for="descricao_cliente">informações adicionais</label>
+        <input type="text" id="descricao_cliente" name="descricao_cliente" required>
+    
+    <button type="submit">CADASTRAR</button>
+</form>
+    <br>
+    <a href="/clientes">clique para ver todos os clientes</a>
+    <br>
+    <a href="/procurar">clique aqui para consultar clientes por nome</a>
+    <br>
+    <a href="/excluir_cadastro">clique para excluir um cliente</a>    
+</body>
+</html>
